@@ -67,5 +67,20 @@ public class SampleClass {
 
     //    implement a custom .toString(){} method here.
 
-    
+    public boolean equals(SampleClass other) {
+       
+        if (other == null) {
+            return false;
+        }
+        
+        
+        return this.a == other.a && this.b == other.b;
+    }
+
+
+    @Override
+    public String toString() {
+        return "SampleClass [a=" + a + ", b=" + b + "]";
+    }
+
 }
